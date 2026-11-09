@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..session3/master.css">
+    <title>Francisco Mujica's Portfoilio - Forms & Multimedia</title>
+</head>
+<body>
+    <header>
+        <h1>Francisco Mujica's Portfoilio - Forms & Multimedia </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nobis ipsam incidunt iusto doloribus quis in hic perferendis sint voluptatum facere alias fugit aperiam aut quisquam quod, ratione eaque maiores.</p>
+    </header>   
+    <hr>
+    <section>
+    <H3 class="sectionHeader"> </H3> 
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+        <div class="form-container"> 
+                <!-- LEFT SIDE -->
+                 <div class="form-column">
+                <label for="firstName"> First Name</label>
+                <input type="text" name="firstName" id="firstName">
+                <label for="lastName"> last Name</label>
+                <input type="text" name="lastName" id="lastName">
+                <label for="myEmail">Email Address:</label>
+                <input type="email" name="myEmail" id="myEmail">
+                <label for="myPassword">Password:</label>
+                <input type="password" name="myPW" id="myPassword">
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" name="birthdate" id="birthdate">
+                <fieldset>
+                    <legend>Best Contact Time</legend>
+                    <input type="radio" name="contactTime" id="contactTimeAny" value="any" checked><label for="contactTimeAny">Anytime</label><br>
+                    <input type="radio" name="contactTime" id="contactTimeAM" value="am"><label for="contactTimeAM">am</label><br>
+                    <input type="radio" name="contactTime" id="contactTimePM" value="pm"><label for="contactTimeAM">pm</label><br>
+                    <input type="radio" name="contactTime" id="contactTimeSpecific" value="specific"><label for="contactspecific">Specific:</label>
+                    <input type="time" name="specificTime" id="specificTiime">
+                 </fieldset>
+            </div>
+                 <!-- RIGHT SIDE -->
+                 <div class="form-column">
+                    <fieldset>
+                        <legend>Checkboxes</legend>
+                        <input type="checkbox" name="demoCheckbox" id="demoCB1" value="1"><label for="demoCB1">One</label>
+                        <input type="checkbox" name="demoCheckbox" id="demoCB2" value="2"><label for="demoCB2">Two</label>
+                        <input type="checkbox" name="demoCheckbox" id="demoCB3" value="3"><label for="demoCB3">Three</label>
+                </fieldset>
+                <label for="mySelect">Select List:</label>
+                <select name="mySelect" id="mySelect" multiple size="3">
+                    <option value="1">Lorem, ipsum dolor.</option>
+                    <option value="2">Delectus, odit nam!</option>
+                    <option value="3">Distinctio, molestiae hic.</option>
+                    <option value="4">Ducimus, quae placeat?</option>
+                    <option value="5">Cumque, optio iure?</option>
+                    <option value="6">Tempora, odio? Sed?</option>
+                    <option value="7">Nihil, reiciendis officia!</option>
+                </select>
+                <label for="myTA">Textarea:</label>
+                <textarea name="myTA" id="myTA" cols="20" rows="4"></textarea>
+                <label for="myFile">File Upload:</label>
+                <input type="file" name="myFile" id="myFile">
+                 </div>
+            </div>
+            <div class="form-buttons">
+                <input type="reset" name="resetBtn" id="resetBtn" value="RESET FORM">
+                <input type="submit" name="submitBtn" id="submitBtn" value=" SUBMIT FORM">
+            </div>
+        </form>
+    </section>
+    <hr>
+    <section>
+      <h3 class="sectionHeader">Multimedia</h3>  
+      <img src="sunset.jpg" alt="Sunset" style="width:99%;">
+      <audio src="tune.mp3" controls>
+        Time to update ypur browser! Audio element in use.
+      </audio>
+      <video src="waves.mov" controls style="width:99%;">
+        Time to update your browser! Video element in use.
+      </video>
+    </section>
+</body>
+</html>
